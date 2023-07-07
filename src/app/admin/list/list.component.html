@@ -1,0 +1,14 @@
+<p>list works!</p>
+
+<ul>
+    <li *ngFor="let data of Admin">
+      {{data.id}}
+      {{data.name}}
+      <button><a routerLink="/admin/detail/{{data.id}}">show</a></button>
+      <!-- <button><a routerLink="/admin/detail">show</a></button> -->
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+  

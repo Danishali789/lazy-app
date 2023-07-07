@@ -1,0 +1,6 @@
+<form [formGroup]="registration" >  
+    <label> Password </label>
+    <input type="Password" id="password" formControlName="firstname"
+    [ngClass]="{'check-input': registration.get('firstname')?.invalid && registration.get('firstname')?.touched}"/>
+         
+</form>
